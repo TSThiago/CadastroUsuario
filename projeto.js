@@ -20,14 +20,23 @@ index = parseInt(0)
 continuar = true
 
 while(continuar == true){
+    opcoes = prompt("O que deseja fazer? \n1 - Cadastrar usuário novo \n2 - Fazer login \n3 - Encerrar operação")
+    
+    // Fazer cadastro
+    if(opcoes == 1){
     nomes[index] = prompt("Insira o nome para cadastrar")
     senhas[index] = prompt("Insira a senha para cadastrar")
     console.log(nomes)
     console.log(senhas)
     index++
+    }
 
-    parar = prompt("Insira um 1 se quiser parar")
-    if(parar == 1){
+    // Fazer login
+    if(opcoes == 2){
+        
+    }
+    // Encerra operação
+    if(opcoes == 3){
         continuar = false
     }
 }
