@@ -16,3 +16,20 @@
 
 nomes = []
 senhas = []
+index = parseInt(0)
+continuar = true
+
+while(continuar == true){
+    nomes[index] = prompt("Insira o nome para cadastrar")
+    senhas[index] = prompt("Insira a senha para cadastrar")
+    console.log(nomes)
+    console.log(senhas)
+    index++
+
+    parar = prompt("Insira um 1 se quiser parar")
+    if(parar == 1){
+        continuar = false
+    }
+}
+
+console.log("Programa encerrado.")
