@@ -33,7 +33,17 @@ while(continuar == true){
 
     // Fazer login
     if(opcoes == 2){
-        
+        nomeLogin = prompt("Insira seu nome para logar")
+        senhasLogin = prompt("Insira sua senha")
+        login = false
+        for(index = 0; index < nomes.length; index++){
+            if(nomeLogin == nomes[index] && senhasLogin == senhas[index]){
+                console.log("Login efetuado.")
+                login = true
+            }else if(login == false){
+                console.log("Erro no login")
+            }
+        }
     }
     // Encerra operação
     if(opcoes == 3){
