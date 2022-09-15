@@ -1,0 +1,2 @@
+nomes = []
+senhas = []
